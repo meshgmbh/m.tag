@@ -1,6 +1,6 @@
 {
-  "name": "alpinejs-component-x",
-  "version": "1.0.2",
+  "name": "@mesh./m.tag",
+  "version": "1.1.0",
   "description": "The package simplifies component inclusion for Alpine.js, enabling seamless integration of dynamic and interactive elements into web projects.",
   "keywords": [
     "Alpine",
@@ -13,10 +13,13 @@
     "HTML React",
     "Laravel",
     "Blade",
+    "mesh.",
+    "m.",
+    "mesh",
     "JS"
   ],
-  "author": "Rakhat Bakytzhanov",
-  "license": "MIT",
+  "author": "mesh. GmbH",
+  "license": "UNLICENSED",
   "module": "dist/component.esm.js",
   "unpkg": "dist/component.min.js",
   "scripts": {
@@ -24,5 +27,14 @@
   },
   "devDependencies": {
     "esbuild": "^0.16.2"
-  }
+  },
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/meshgmbh/m.tag.git"
+  },
+  "bugs": {
+    "url": "https://github.com/meshgmbh/m.tag/issues"
+  },
+  "homepage": "https://github.com/meshgmbh/m.tag#readme"
 }

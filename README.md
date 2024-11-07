@@ -13,13 +13,13 @@ The Alpine Components Package simplifies component inclusion for Alpine.js, enab
 ### With a Package Manager
 
 ```shell
-npm i alpinejs-component-x
+npm i m.tag
 ```
 
 ```js
 // main.js
 import Alpine from 'alpinejs'
-import component from 'alpinejs-component-x'
+import component from 'm.tag'
 
 Alpine.plugin(component)
 
@@ -53,13 +53,13 @@ Now, in your initial HTML file (e.g., "index.html" or any other entry point), yo
     <meta charset="UTF-8" />
 </head>
 <body>
-  <!-- Include the Counter Component using the custom element <a-components-counter.html> -->
-  <a-components-counter.html></a-components-counter.html>
+  <!-- Include the Counter Component using the custom element <m-counter.html> -->
+  <m-counter.html></m-counter.html>
 
-  <!-- Notice: Use <a-components-counter.html> if you will include this component only once on the page. -->
+  <!-- Notice: Use <m-counter.html> if you will include this component only once on the page. -->
 
-  <!-- Other way to include if you need multiple components on the page, use <a-include url=""> syntax -->
-  <a-include url="components/counter.html"></a-include>
+  <!-- Other way to include if you need multiple components on the page, use <m-include url=""> syntax -->
+  <m-include url="components/counter.html"></m-include>
 
   <!-- You can include other components here using the same syntax -->
   
@@ -70,7 +70,7 @@ Now, in your initial HTML file (e.g., "index.html" or any other entry point), yo
 
 ## Passing Data to a Component
 
-With the Alpine Components Package, you can easily pass data to your custom components. Let's explore how to do this using the <a-components-counter> custom element.
+With the Alpine Components Package, you can easily pass data to your custom components. Let's explore how to do this using the <m-counter> custom element.
 
 Step 1: Update the Counter Component (counter.html)
 
@@ -86,41 +86,23 @@ In "counter.html", modify the component to use the startvalue data as the initia
 
 Step 2: Including the Counter Component with Data
 
-Now, you can include the "counter.html" component using the <a-components-counter> custom element and pass the startvalue data to it:
+Now, you can include the "counter.html" component using the <m-counter> custom element and pass the startvalue data to it:
 
 ```html
 <!-- index.html -->
 
 <!-- Include the Counter Component with the initial count value -->
-<a-components-counter x-data="{ startvalue: 5 }"></a-components-counter>
+<m-counter x-data="{ startvalue: 5 }"></m-counter>
 
-<!-- Notice: Use <a-components-counter> if you will include this component only once on the page. -->
+<!-- Notice: Use <m-counter> if you will include this component only once on the page. -->
 
-<!-- Other way to include if you need multiple components on the page, use <a-include url=""> syntax -->
-<a-include url="components/counter.html" x-data="{ startvalue: 10 }"></a-include>
+<!-- Other way to include if you need multiple components on the page, use <m-include url=""> syntax -->
+<m-include url="components/counter.html" x-data="{ startvalue: 10 }"></m-include>
 ```
 
 
 ### Notice:
 
-- Use <a-components-counter.html> if you plan to include this component only once on the page. This custom element will directly fetch and render the "counter.html" component.
+- Use <m-counter.html> if you plan to include this component only once on the page. This custom element will directly fetch and render the "counter.html" component.
 
-- If you need to include the same component multiple times or dynamically load components, use the <a-include url=""> syntax. This directive will fetch the specified component and include it in the designated area.
-
-### Contributing
-
-I am welcome contributions to the Alpine Components Package! Feel free to open issues or submit pull requests in our GitHub repository. Your support helps us enhance the package further.
-
-### Support
-
-If you encounter any issues or have questions about using the Alpine Components Package, please don't hesitate to contact us at support@example.com. We're here to assist you.
-
-### License
-
-This package is licensed under the MIT License. © 2023 Rakhat Bakytzhanov. All rights reserved.
-
-
-
-### Stats
-
-
+- If you need to include the same component multiple times or dynamically load components, use the <m-include url=""> syntax. This directive will fetch the specified component and include it in the designated area.
