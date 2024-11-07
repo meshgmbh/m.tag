@@ -1,4 +1,4 @@
-# AlpineJS ComponentX
+# m.tag custom tags
 
 The Alpine Components Package simplifies component inclusion for Alpine.js, enabling seamless integration of dynamic and interactive elements into web projects.
 
